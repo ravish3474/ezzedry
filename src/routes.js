@@ -7,6 +7,11 @@ const UsersList = React.lazy(() => import('./views/pages/users/UsersList'))
 const AddSubAdmin = React.lazy(() => import('./views/pages/subAdmin/AddSubAdmin'))
 const Coupon = React.lazy(() => import('./views/pages/coupon/Coupon'))
 const Curfew = React.lazy(() => import('./views/pages/curfew/Curfew'))
+const CategoryList = React.lazy(() => import('./views/pages/categories/Categories'))
+const EarningsList = React.lazy(() => import('./views/pages/earnings/Earnings'))
+const Currency = React.lazy(() => import('./views/pages/currency/Currency'))
+const Batchpayment = React.lazy(() => import('./views/pages/batch_payment/Batch_payment'))
+
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
@@ -62,7 +67,10 @@ const routes = [
   { path: '/sub-admin-add', name: 'SubAdminAdd', component: AddSubAdmin },
   { path: '/coupon', name: 'Coupon', component: Coupon },
   { path: '/curfew', name: 'Curfew', component: Curfew },
-
+  { path: '/category', name: 'category', component: CategoryList },
+  { path: '/earnings', name: 'earnings', component: EarningsList },
+  { path: '/currency', name: 'currency', component: Currency },
+  { path: '/batch-payments', name: 'batch-payments', component: Batchpayment },
   { path: '/base', name: 'Base', component: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', component: Accordion },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },

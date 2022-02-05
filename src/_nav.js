@@ -63,13 +63,13 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Currency Settings',
-    to: '/currency-settings',
+    to: '/currency',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Manage Categories',
-    to: '/manage-categories',
+    to: '/category',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
@@ -81,7 +81,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'View Batch Payment',
-    to: '/view-batch-payment',
+    to: '/batch-payments',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
