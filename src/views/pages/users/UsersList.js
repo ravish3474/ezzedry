@@ -14,7 +14,7 @@ const UsersList = () => {
         <CCardHeader>
           <div className='d-flex justify-content-between align-items-center'>
             <span>Users List</span>
-            <button className='btn btn-primary'>Add</button>
+            {/* <button className='btn btn-primary'>Add</button> */}
           </div>
         </CCardHeader>
         <CCardBody>
@@ -24,24 +24,55 @@ const UsersList = () => {
                   <thead>
                     <tr>
                       <th>S.No</th>
-                      <th>Username</th>
+                      <th>Name</th>
                       <th>Email</th>
                       <th>Phone</th>
-                      <th>Actions</th>
+                      <th>Type</th>
+                      <th>Register Date</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                         <td>1</td>
-                        <td>System Architect</td>
+                        <td>XYZ</td>
                         <td>Edinburgh@example.com</td>
                         <td>622322221</td>
+                        <td>Laundry Outlet</td>
+                        <td>2022-01-12 09:46:00	</td>
                         <td>
                           <div>
                             <button className='btn btn-primary mr-2'>Edit</button>
-                            <button className='btn btn-danger  text-white'>Delete</button>
+                            <button className='btn btn-danger  text-white'>Block</button>
                           </div>
-
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>XYZ</td>
+                        <td>Edinburgh@example.com</td>
+                        <td>622322221</td>
+                        <td>Customer</td>
+                        <td>2022-01-12 09:46:00	</td>
+                        <td>
+                          <div>
+                            <button className='btn btn-primary mr-2'>Edit</button>
+                            <button className='btn btn-danger  text-white'>Block</button>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>XYZ</td>
+                        <td>Edinburgh@example.com</td>
+                        <td>622322221</td>
+                        <td>Rider</td>
+                        <td>2022-01-12 09:46:00	</td>
+                        <td>
+                          <div>
+                            <button className='btn btn-primary mr-2'>Edit</button>
+                            <button className='btn btn-danger  text-white'>Block</button>
+                          </div>
                         </td>
                     </tr>
                   </tbody>
