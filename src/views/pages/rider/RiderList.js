@@ -6,7 +6,7 @@ import { CRow, CCol, CCard, CCardHeader, CCardBody } from '@coreui/react'
 import { Link } from 'react-router-dom'
 
 
-const SubAdminList = () => {
+const RiderList = () => {
   
   return (
     <>
@@ -14,7 +14,7 @@ const SubAdminList = () => {
         <CCardHeader>
           <div className='d-flex justify-content-between align-items-center'>
             <span>Sub-Admin List</span>
-            <Link to="/sub-admin-add" className='btn btn-primary'>Add</Link>
+            <Link to="/add-rider" className='btn btn-primary'>Add</Link>
           </div>
         </CCardHeader>
         <CCardBody>
@@ -24,7 +24,7 @@ const SubAdminList = () => {
                   <thead>
                     <tr>
                       <th>S.No</th>
-                      <th>Name</th>
+                      <th>Rider Name</th>
                       <th>Email</th>
                       <th>Phone</th>
                       <th>Actions</th>
@@ -33,13 +33,14 @@ const SubAdminList = () => {
                   <tbody>
                     <tr>
                         <td>1</td>
-                        <td>System Architect</td>
+                        <td>Ramesh</td>
                         <td>Edinburgh@example.com</td>
                         <td>622322221</td>
                         <td>
                           <div>
-                            <button className='btn btn-primary mr-2'>Edit</button>
-                            <button className='btn btn-danger  text-white'>Delete</button>
+                            <button className='btn btn-primary '>Accept</button>
+                            <Link to="/view-rider" className='btn btn-primary ml-2'>View</Link>
+                            <button className='btn btn-danger ml-2 text-white'>Delete</button>
                           </div>
 
                         </td>
@@ -54,4 +55,4 @@ const SubAdminList = () => {
   )
 }
 
-export default SubAdminList
+export default RiderList

@@ -134,6 +134,12 @@ const _nav = [
   },
   {
     component: CNavItem,
+    name: 'Products',
+    to: '/products',
+    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
     name: 'Tax Settings',
     to: '/tax-settings',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,

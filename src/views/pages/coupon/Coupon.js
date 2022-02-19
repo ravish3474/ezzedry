@@ -3,6 +3,7 @@
 import React, { useEffect, useState, createRef } from 'react'
 import classNames from 'classnames'
 import { CButton, CRow, CCol, CCard, CCardHeader, CCardBody } from '@coreui/react'
+import { Link } from 'react-router-dom'
 
 const Coupon = () => {
   
@@ -12,7 +13,7 @@ const Coupon = () => {
         <CCardHeader>
           <div className='d-flex justify-content-between align-items-center'>
             <span>Coupon</span>
-            {/* <button className='btn btn-primary'>Add</button> */}
+            <Link to="/add-coupon" className='btn btn-primary'>Add</Link>
           </div>
         </CCardHeader>
         <CCardBody>

@@ -6,11 +6,20 @@ const SubAdminList = React.lazy(() => import('./views/pages/subAdmin/SubAdminLis
 const UsersList = React.lazy(() => import('./views/pages/users/UsersList'))
 const AddSubAdmin = React.lazy(() => import('./views/pages/subAdmin/AddSubAdmin'))
 const Coupon = React.lazy(() => import('./views/pages/coupon/Coupon'))
+const AddCoupon = React.lazy(() => import('./views/pages/coupon/AddCoupon'))
 const Curfew = React.lazy(() => import('./views/pages/curfew/Curfew'))
 const CategoryList = React.lazy(() => import('./views/pages/categories/Categories'))
+const AddCategory = React.lazy(() => import('./views/pages/categories/AddCategory'))
 const EarningsList = React.lazy(() => import('./views/pages/earnings/Earnings'))
 const Currency = React.lazy(() => import('./views/pages/currency/Currency'))
 const Batchpayment = React.lazy(() => import('./views/pages/batch_payment/Batch_payment'))
+const RiderList = React.lazy(() => import('./views/pages/rider/RiderList'))
+const AddRider = React.lazy(() => import('./views/pages/rider/AddRider'))
+const ViewRider = React.lazy(() => import('./views/pages/rider/ViewRider'))
+const AddProduct = React.lazy(() => import('./views/pages/products/AddProduct'))
+const ProductsList = React.lazy(() => import('./views/pages/products/ProductsList'))
+const Sliders = React.lazy(() => import('./views/pages/app_sliders/Sliders'))
+const AddSlider = React.lazy(() => import('./views/pages/app_sliders/AddSlider'))
 
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -66,10 +75,21 @@ const routes = [
   { path: '/sub-admin', name: 'SubAdmin', component: SubAdminList },
   { path: '/sub-admin-add', name: 'SubAdminAdd', component: AddSubAdmin },
   { path: '/coupon', name: 'Coupon', component: Coupon },
+  { path: '/add-coupon', name: 'Add Coupon', component: AddCoupon },
   { path: '/curfew', name: 'Curfew', component: Curfew },
-  { path: '/category', name: 'category', component: CategoryList },
+  { path: '/category', name: 'Category', component: CategoryList },
+  { path: '/add-category', name: 'Add Category', component: AddCategory },
   { path: '/earnings', name: 'earnings', component: EarningsList },
   { path: '/currency', name: 'currency', component: Currency },
+  { path: '/rider', name: 'Riders', component: RiderList },
+  { path: '/rider-request', name: 'All Riders Requests', component: RiderList },
+  { path: '/add-rider', name: 'Add Rider', component: AddRider },
+  { path: '/view-rider', name: 'View Rider', component: ViewRider },
+  { path: '/products', name: 'Manage Products', component: ProductsList },
+  { path: '/add-product', name: 'Add Product', component: AddProduct },
+  { path: '/app-sliders', name: 'App Sliders', component: Sliders },
+  { path: '/add-app-sliders', name: 'Add App-Sliders', component: AddSlider },
+
   { path: '/batch-payments', name: 'batch-payments', component: Batchpayment },
   { path: '/base', name: 'Base', component: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', component: Accordion },

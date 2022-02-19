@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React, { useEffect, useState, createRef } from 'react'
 import { CRow, CCol, CCard, CCardHeader, CCardBody } from '@coreui/react'
+import { Link } from 'react-router-dom'
 
 
 const CategoryList = () => {
@@ -11,7 +12,7 @@ const CategoryList = () => {
         <CCardHeader>
           <div className='d-flex justify-content-between align-items-center'>
             <span>Category List</span>
-            <button className='btn btn-primary'>Add Category</button>
+            <Link to="/add-category" className='btn btn-primary'>Add Category</Link>
           </div>
         </CCardHeader>
         <CCardBody>
